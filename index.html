@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Store App</title>
+</head>
+<body>
+    <div id="banner"> <p id="bannertitle" style="font-size: 5vw;">McDuck Computer Store</h1> </div>
+    <div class="flex-container"> 
+        <div id="loan"> 
+        <h1>Donald Duck</h1>
+        <p id="balance">Balance: 0 kr</p>
+        <p id="loanp">Loan: 0 kr</p> 
+        <button id="loanbutton"> Get a loan </button>
+        <button id="repayloan" style="color: red; display: none;"> Pay Amount </button>
+        <img id="donaldimg"; src="images/Donald_Duck.png"; height="120em"; width="105em"; alt="DonaldImg">
+        </div>
+
+        <div id="work">
+        <h1>Work</h1>
+        <p id="pay">Pay: 0 kr</p>
+        <button id="bankbutton" onclick=""> Bank </button>
+        <button id="workbutton" onclick=""> Work </button>
+        <img id="scroogeimg"; src="images/Scrooge_Bank.png"; height="140em"; width="300em"; alt="DonaldImg">
+        </div>
+
+        <div id="laptops"> 
+        <h1>Laptops</h1>
+        <select id="selectlist"></select> 
+        <h3>Features: </h3>
+        <p id="pcInfoText"></p>
+        </div>
+
+        <div id="pcinfo";> 
+            <h1 id="title"></h1>
+            <p id="desc"></p>
+            <p id="price">Price: kr </p>
+            <button id="buybutton" onclick=""> Buy </button> 
+            <img id="pcimg"; style="margin-left: 3em; margin-top: 0.5em;"; height="100em"; width="100em"; alt="defaultPcImg"> 
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
