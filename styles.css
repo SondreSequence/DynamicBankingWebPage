@@ -7,7 +7,7 @@
 body {
   background-color: lightblue;
 }
-    
+
     h1 {
     color: black;
     text-align: left;
@@ -29,7 +29,6 @@ body {
     color:white;
   }
 
-
  .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -46,7 +45,6 @@ body {
     height:fit-content;
   }
   
-
   .flex-container > div > p {
     flex-shrink: 0;
     min-width: 0;
