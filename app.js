@@ -45,7 +45,7 @@ async function getComputersData() {
 /*Function to add loan if you don't ask for more than double of that in your work account. 
 Whilst also making sure you can't loan if you already have one that needs to be repaid*/
 function addLoan() {
-  let pay = parseInt(payElement.innerText.split(":")[1]);
+  let pay = work;
   let wantedLoan = prompt("Amount: ");
   if (pay == 0 || loan * 2 > pay || wantedLoan * 2 > pay || !loan == 0) {
     alert("You either have to work more or pay off your loan!");
@@ -179,7 +179,7 @@ select.addEventListener("change", (event) => {
   const selectedIndex = event.target.selectedIndex;
   const options = event.target.options;
   const selectedOption = options[selectedIndex];
-  selectedID = selectedOption.id;
+  selectedID = selectedOption.id - 1;
   populateSelectedOption(selectedID);
 });
 
